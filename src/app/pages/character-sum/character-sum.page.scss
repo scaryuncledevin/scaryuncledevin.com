@@ -1,0 +1,18 @@
+h1 {
+  text-align: center;
+  margin: .5em 0em;
+}
+
+#container {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+
+  ion-grid {
+    margin-top: 1em;
+
+    ion-col {
+      border: 1px solid #CCC;
+    }
+  }
+}

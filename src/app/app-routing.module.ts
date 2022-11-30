@@ -3,12 +3,21 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '',
+    path:'',
+    pathMatch: 'full',
+    redirectTo: 'home'
+  },
+  {
+    path: 'home',
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
   {
     path: 'google-cache',
     loadChildren: () => import('./pages/google-cache/google-cache.module').then( m => m.GoogleCachePageModule)
+  },
+  {
+    path: 'character-sum',
+    loadChildren: () => import('./pages/character-sum/character-sum.module').then( m => m.CharacterSumPageModule)
   },
   {
     path: '**',

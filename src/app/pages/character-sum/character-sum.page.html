@@ -1,0 +1,23 @@
+<ion-content>
+  <h1>Character Sum</h1>
+
+  <div id="container">
+    <form (ngSubmit)="convert()">
+      <ion-item>
+        <ion-input placeholder="abc123" [(ngModel)]="input" name="input"></ion-input>
+        <ion-button slot="end" size="default" type="submit">Convert</ion-button>
+      </ion-item>
+    </form>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>Inputs</ion-col>
+        <ion-col>Outputs</ion-col>
+      </ion-row>
+      <ion-row *ngFor="let result of results | keyvalue">
+        <ion-col>{{ result.key }}</ion-col>
+        <ion-col>{{ result.value }}</ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

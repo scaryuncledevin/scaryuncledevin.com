@@ -1,11 +1,13 @@
 <ion-content [fullscreen]="true">
   <h1>Google Cache Checker</h1>
 
-  <form id="container" (ngSubmit)="checkCache()">
-    <ion-item>
-      <ion-label position="stacked">URL</ion-label>
-      <ion-input placeholder="https://scaryuncledevin.com/" [(ngModel)]="url" name="url"></ion-input>
-      <ion-button slot="end" size="default" type="submit">Check</ion-button>
-    </ion-item>
-  </form>
+  <div id="container">
+    <form (ngSubmit)="checkCache()">
+      <ion-item>
+        <ion-label position="stacked">URL</ion-label>
+        <ion-input placeholder="https://scaryuncledevin.com/" [(ngModel)]="url" name="url"></ion-input>
+        <ion-button slot="end" size="default" type="submit">Check</ion-button>
+      </ion-item>
+    </form>
+  </div>
 </ion-content>
