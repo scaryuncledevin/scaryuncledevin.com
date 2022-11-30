@@ -7,15 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GoogleCachePage implements OnInit {
 
+  url = '';
+
   constructor() { }
 
   ngOnInit() {
   }
 
   checkCache() {
-    this.url = this.url.trim().replace(/http(s?):\/\//, '');
-    window.location.href = `http://webcache.googleusercontent.com/search?q=cache:${this.url}`;
+    let cacheUrl = this.url.trim().replace(/http(s?):\/\//, '');
+    window.location.href = `https://webcache.googleusercontent.com/search?q=cache:${cacheUrl}`;
   }
-
-  url = '';
 }
