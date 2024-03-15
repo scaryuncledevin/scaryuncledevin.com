@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ScaryUncleDevin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/futura.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <style>
+        section#main {
+            background-color: rgba(255, 255, 255, .75);
+            color: #222;
+            width: 25%;
+            min-width: 300px;
+            max-width: 500px;
+            border-radius: .5em;
+            box-shadow: rgba(0, 0, 0, .75) 0em 5em 10em;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            text-align: center;
+        }
+
+        section#main>header {
+            text-align: center;
+            margin: 2em 0em;
+            border-bottom: 1pt solid #999;
+        }
+
+        section#main>header>div.avatar>img {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+
+        section#main>header {
+            margin: 2em;
+        }
+
+        section#main>footer {
+            margin: 2em 0em;
+        }
+
+        section#main>footer>ul.links {
+            list-style: none;
+            padding: 0;
+        }
+
+        section#main>footer>ul.links>li {
+            display: inline-block;
+            width: 10%;
+        }
+
+        section#main>footer>ul.links>li>a {
+            border: none;
+        }
+
+        footer#footer {
+            box-sizing: border-box;
+            position: absolute;
+            bottom: 0%;
+            width: 100%;
+            text-align: center;
+            color: rgba(255, 255, 255, .75);
+            font-size: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="main">
+        <header>
+            <div class="avatar"><img src="assets/me.jpg" /></div>
+            <h1>Devin Rodriguez</h1>
+            <p>Developer, gamer, cosplayer, corner case chaser.</p>
+        </header>
+
+        <footer>
+            <p>@scaryuncledevin</p>
+            <ul class="links">
+                <li>
+                    <a href="https://github.com/scaryuncledevin/" target="_blank">
+                        <img src="assets/github.svg" alt="Github">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/scaryuncledevin/" target="_blank">
+                        <img src="assets/instagram.svg" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/scaryuncledevin/" target="_blank">
+                        <img src="assets/linkedin.svg" alt="LinkedIn">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://threads.net/@scaryuncledevin/" target="_blank">
+                        <img src="assets/threads.svg" alt="Threads">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.com/scaryuncledevin/" target="_blank">
+                        <img src="assets/x.svg" alt="X (formerly Twitter)">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </section>
+
+    <footer id="footer">
+        <p>&copy; Devin Rodriguez</p>
+    </footer>
+</body>
+
+</html>
