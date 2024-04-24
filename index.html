@@ -9,6 +9,10 @@
     <link rel="stylesheet" type="text/css" href="styles/futura.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <style>
+        html, body {
+            height: 100%;
+        }
+
         section#main {
             background-color: rgba(255, 255, 255, .75);
             color: #222;
@@ -29,7 +33,6 @@
         section#main>header {
             text-align: center;
             margin: 2em 0em;
-            border-bottom: 1pt solid #999;
         }
 
         section#main>header>div.avatar>img {
@@ -41,32 +44,38 @@
             margin: 2em;
         }
 
-        section#main>footer {
-            margin: 2em 0em;
+        section#main>section {
+            margin: 0;
+            padding: 1em 0em;
+            border-top: 1pt solid #999;
         }
 
-        section#main>footer>ul.links {
+        section#main>section>ul.links,
+        section#main>section>ul.social {
             list-style: none;
             padding: 0;
         }
 
-        section#main>footer>ul.links>li {
+        section#main>section>ul.links>li,
+        section#main>section>ul.social>li {
             display: inline-block;
+        }
+
+        section#main>section>ul.social>li {
             width: 10%;
         }
 
-        section#main>footer>ul.links>li>a {
+        section#main>section>ul.links>li>a,
+        section#main>section>ul.social>li>a {
             border: none;
         }
 
-        footer#footer {
-            box-sizing: border-box;
-            position: absolute;
-            bottom: 0%;
-            width: 100%;
-            text-align: center;
-            color: rgba(255, 255, 255, .75);
-            font-size: 80%;
+        section#main>section>ul.links>li>a {
+            background-color: #349;
+            padding: .5em;
+            font-weight: bold;
+            color: #FFF;
+            border-radius: .5em;
         }
     </style>
 </head>
@@ -79,9 +88,16 @@
             <p>Developer, gamer, cosplayer, corner case chaser.</p>
         </header>
 
-        <footer>
-            <p>@scaryuncledevin</p>
+        <section>
             <ul class="links">
+                <li>
+                    <a href="work.html">Work</a>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <ul class="social">
                 <li>
                     <a href="https://github.com/scaryuncledevin/" target="_blank">
                         <img src="assets/github.svg" alt="Github">
@@ -108,7 +124,8 @@
                     </a>
                 </li>
             </ul>
-        </footer>
+            <p>@scaryuncledevin</p>
+        </section>
     </section>
 
     <footer id="footer">

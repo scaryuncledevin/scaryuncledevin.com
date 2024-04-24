@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ScaryUncleDevin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/futura.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <style>
+        body {
+            padding: 2em 0;
+        }
+        section#card {
+            background-color: rgba(255, 255, 255, .75);
+            color: #222;
+            width: 50%;
+            min-width: 500px;
+            max-width: 1000px;
+            border-radius: .5em;
+            box-shadow: rgba(0, 0, 0, .75) 0em 5em 10em;
+
+            margin: 2em auto;
+
+            text-align: center;
+        }
+
+        section#card>header {
+            text-align: center;
+            padding: 1em 0em;
+        }
+
+        section#card h1 {
+            padding: 1em 0;
+            margin: 0;
+        }
+
+        section#card>header>div.avatar>img {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+
+        section#card>header {
+            padding: 2em;
+        }
+
+        section#card>section {
+            padding: 1em 0em;
+            border-top: 1pt solid #999;
+        }
+
+        section#card>section.site>div.screenshot {
+            width: 90%;
+            height: 500px;
+            margin: 0 auto;
+        }
+
+        section#card>section.site>div.screenshot>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top center;
+            border-radius: .5em;
+            box-shadow: rgba(0, 0, 0, .75) 0em 0em 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="card">
+        <header>
+            <h1>Work</h1>
+            <p>A small collection of some previous work.</p>
+        </header>
+
+        <section class="site">
+            <h2>The Hertz Team</h2>
+            <div class="screenshot">
+                <img src="assets/work/thehertzteam_com.png">
+            </div>
+        </section>
+
+        <section class="site">
+            <h2>Noene USA</h2>
+            <div class="screenshot">
+                <img src="assets/work/noeneusa_com.png">
+            </div>
+        </section>
+
+        <section class="site">
+            <h2>INE</h2>
+            <div class="screenshot">
+                <img src="assets/work/ine_com.png">
+            </div>
+        </section>
+
+        <section class="site">
+            <h2>MuttMart</h2>
+            <div class="screenshot">
+                <img src="assets/work/muttmart_com.png">
+            </div>
+        </section>
+    </section>
+
+    <footer id="footer">
+        <p>&copy; Devin Rodriguez</p>
+    </footer>
+</body>
+
+</html>
